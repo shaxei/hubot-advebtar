@@ -23,7 +23,7 @@
      request baseUrl + '/', (_, res) ->
 
        # parse response body
-       $ = cheerio.load res body
+       $ = cheerio.load res.body
        calendars = []
        $('.mod-calendarList .mod-calendarList-title a').each ->
          a = $ @
