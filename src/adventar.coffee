@@ -33,7 +33,7 @@
 
        # filter calendars
        filtered = calendars.filter (c) ->
-         if query? then c.name.match(new RegExp(query, 'i')) else ture
+         if query? then c.name.match(new RegExp(query, 'i')) else true
  
        # format calendars
        message = filtered
